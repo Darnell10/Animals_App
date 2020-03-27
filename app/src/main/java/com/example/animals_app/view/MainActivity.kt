@@ -1,7 +1,8 @@
-package com.example.animals_app
+package com.example.animals_app.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.animals_app.R
 
 class MainActivity : AppCompatActivity() {
 
