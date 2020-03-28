@@ -3,4 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_fragment">List Fragment</string>
+    <string name="detail_fragment">detail fragment</string>
+    <string name="error_while_fetching_data">Error while fetching data</string>
+    <string name="animal_name">Animal Name</string>
 </resources>
