@@ -67,7 +67,7 @@ class ListFragment : Fragment() {
             recyclerView.visibility = View.GONE
             listError.visibility = View.GONE
             loading_view.visibility = View.VISIBLE
-            viewModel.refresh()
+            viewModel.hardRefresh()
             refreshLayout.isRefreshing = false
         }
 
