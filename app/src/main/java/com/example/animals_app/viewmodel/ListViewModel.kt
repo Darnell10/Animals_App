@@ -11,22 +11,22 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
     val loadError by lazy { MutableLiveData<Boolean>() }
     val loading by lazy { MutableLiveData<Boolean>() }
 
-    fun refresh() {
-        getAnimals()
-    }
-
-    private fun getAnimals() {
-        val a = Animal("Bear")
-        val b = Animal("Bird")
-        val c = Animal("Elephant")
-        val d = Animal("Dog")
-        val e = Animal("Cat")
-
-
-        val animalList: ArrayList<Animal> = arrayListOf(a, b, c, d, e)
-
-        animals.value = animalList
-        loadError.value = false
-        loading.value = false
-    }
+//    fun refresh() {
+//        getAnimals()
+//    }
+//
+//    private fun getAnimals() {
+//        val a = Animal("Bear")
+//        val b = Animal("Bird")
+//        val c = Animal("Elephant")
+//        val d = Animal("Dog")
+//        val e = Animal("Cat")
+//
+//
+//        val animalList: ArrayList<Animal> = arrayListOf(a, b, c, d, e)
+//
+//        animals.value = animalList
+//        loadError.value = false
+//        loading.value = false
+//    }
 }
