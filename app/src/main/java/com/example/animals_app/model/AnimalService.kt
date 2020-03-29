@@ -7,9 +7,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class AnimalService {
 
-    private val BASE_URL = "ttps://us-central1-apis-4674e.cloudfunctions.net"
+    private val BASE_URL = "https://us-central1-apis-4674e.cloudfunctions.net"
 
     private val retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .build()
