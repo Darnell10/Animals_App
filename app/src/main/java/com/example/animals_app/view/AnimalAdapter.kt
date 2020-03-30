@@ -3,6 +3,7 @@ package com.example.animals_app.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.animals_app.R
 import com.example.animals_app.model.Animal
@@ -30,7 +31,13 @@ class AnimalAdapter(private val animalList: ArrayList<Animal>) :
         holder.view.animalName.text = animalList[position].name
         holder.view.animalImage.loadImage(
             animalList[position].imageUrl,
-            getProgressDrawable(holder.view.context))
+            getProgressDrawable(holder.view.context)
+        )
+        holder.view.animal_ItemLayout.setOnClickListener {
+            val action =
+                ListFragmentDirections.actionListFragmentToDetailFragment(animalList[position])
+            Navigation.findNavController(holder.view).navigate(action)
+        }
 
     }
 

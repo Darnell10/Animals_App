@@ -7,9 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.animals_app.R
+import com.example.animals_app.model.Animal
+import com.example.animals_app.util.getProgressDrawable
+import com.example.animals_app.util.loadImage
+import kotlinx.android.synthetic.main.fragment_detail.*
 
 
 class DetailFragment : Fragment() {
+
+    var animal: Animal? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,6 +27,20 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        arguments?.let {
+            animal = DetailFragmentArgs.fromBundle(it).animal
+        }
+        context?.let {
+            animalImage.loadImage(animal?.imageUrl, getProgressDrawable(it))
+        }
+
+        animalName.text = animal?.name
+        animalLocation.text = animal?.location
+        animalLifeSpan.text = animal?.lifeSpan
+        animalDiet.text = animal?.diet
+
     }
+
 
 }
