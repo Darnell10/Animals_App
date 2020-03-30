@@ -7,4 +7,8 @@
     <string name="detail_fragment">detail fragment</string>
     <string name="error_while_fetching_data">Error while fetching data</string>
     <string name="animal_name">Animal Name</string>
+    <string name="animal_diet">Animal Diet</string>
+    <string name="animal_lifespan">Animal Lifespan</string>
+    <string name="animal_location">Animal Location</string>
+    <string name="animal_name">Animal Name</string>
 </resources>
