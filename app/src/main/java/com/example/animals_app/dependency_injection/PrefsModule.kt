@@ -25,6 +25,7 @@ class PrefsModule {
     }
 }
 
+//Don't really need this for this app. just becoming familiar with Dagger.
 const val CONTEXT_APP = "Application Context"
 const val CONTEXT_ACTIVITY = "Activity Context"
 
