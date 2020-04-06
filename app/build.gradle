@@ -79,7 +79,7 @@ dependencies {
     //Mockito
     testImplementation "org.mockito:mockito-inline:$mockitoVersion"
     testImplementation "android.arch.core:core-testing:1.1.1"
-    kaptTest "com.google.dagger:dagger-compile"
+    kaptTest "com.google.dagger:dagger-compiler: $mockitoVersion"
 
 
     testImplementation 'junit:junit:4.12'
