@@ -29,6 +29,7 @@ android {
     dataBinding.enabled = true
 }
 
+
 def lifeCycleExtensionVersion = '1.1.1'
 def supportVersion = '29.0.0'
 def retrofitVersion = '2.3.0'
@@ -69,6 +70,9 @@ dependencies {
     //palette
     implementation "com.android.support:palette-v7:$supportVersion"
 
+    //Sharedprefs
+    implementation "androidx.preference:preference-ktx:1.1.0"
+
     //Dagger
     implementation "com.google.dagger:dagger:$daggerVersion"
     implementation "com.google.dagger:dagger-android-support:$daggerVersion"
@@ -80,6 +84,8 @@ dependencies {
     testImplementation "org.mockito:mockito-inline:$mockitoVersion"
     testImplementation "android.arch.core:core-testing:1.1.1"
     kaptTest "com.google.dagger:dagger-compiler: $mockitoVersion"
+
+
 
 
     testImplementation 'junit:junit:4.12'
